@@ -6,6 +6,9 @@
 
 #include <SDL2/SDL.h>
 
+const int gc_levelwindow_width = 800;
+const int gc_levelwindow_height = 600;
+
 class Renderer
 {
     public:
