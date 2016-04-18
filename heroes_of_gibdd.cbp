@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="heroes_of_gibdd" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/heroes_of_gibdd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/heroes_of_gibdd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl2-config --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl2-config --libs`" />
+		</Linker>
+		<Unit filename="cb.bmp" />
+		<Unit filename="include/camera.h" />
+		<Unit filename="include/gamemap.h" />
+		<Unit filename="include/gameobject.h" />
+		<Unit filename="include/level.h" />
+		<Unit filename="include/mapobject.h" />
+		<Unit filename="include/modeller.h" />
+		<Unit filename="include/position.h" />
+		<Unit filename="include/renderer.h" />
+		<Unit filename="include/unit.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/camera.cpp" />
+		<Unit filename="src/gamemap.cpp" />
+		<Unit filename="src/gameobject.cpp" />
+		<Unit filename="src/level.cpp" />
+		<Unit filename="src/mapobject.cpp" />
+		<Unit filename="src/modeller.cpp" />
+		<Unit filename="src/position.cpp" />
+		<Unit filename="src/renderer.cpp" />
+		<Unit filename="src/unit.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
