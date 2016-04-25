@@ -15,6 +15,38 @@ void Renderer::render()
     int j2 = ceil(PhysicalPos(AbsolutePos(cam.x - gc_levelwindow_width/2, cam.y + gc_levelwindow_height/2)).j);
 
     //в порядке приближения клеток отрисовываем клетки и объекты на них
+     int i, j,
+    counter = 1;
+
+    for (int diag = 0; diag < n; diag++) // выполняем проход по диагоналям
+    {
+            i = diag;
+            j = 0;
+
+            while (i >= 0)
+            {
+                Array[i][j] = counter;
+                counter ++;
+                i -= 1;
+                j += 1;
+            }
+
+    }
+
+    for (int diag = 1; diag < n; diag++)
+    {
+            i = diag;
+            j = n-1;
+
+            while (i <= n-1)
+            {
+                Array[i][j] = counter;
+                counter ++;
+                i ++;
+                j --;
+            }
+    }
+
     int i = i1, j = j1;
     while(true) //FIXME
     {
